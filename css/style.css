@@ -1,0 +1,121 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+	-moz-box-sizing: border-box; /* Firexfox */
+	-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+	box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	color: #000;
+	font-size: 12px;
+	line-height: 1.4;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+}
+
+header {
+
+}
+
+.intro {
+	background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+	background-size: cover;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1, h3, .sign_up, .relaxr {
+	font-weight: bolder;
+}
+
+h2, h4, span, footer {
+	font-weight: bold;
+}
+
+.para1, .para2, ul {
+	font-weight: normal;
+}
+
+h1, h2, .relaxr {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+.para2, span {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+.para1, ul {
+	font-size: 13px;
+}
+
+.sign_up {
+	font-size: 12px;
+}
+
+footer {
+	font-size: 9px;
+}
+
+h3, .sign_up {
+	border: 5px;
+}
+
+
+.para2 {
+	font-family: italic;
+}
