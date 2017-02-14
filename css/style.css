@@ -63,6 +63,29 @@ header {
 	background-size: cover;
 }
 
+.benefits {
+	background: #f0efef;
+	background-size: cover;	
+}
+
+.benefits h4 {
+	margin-top: 0;
+}
+
+.testimonial {
+	background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+	background-size: cover;
+}
+
+.testimonial p {
+	margin-top: 0;
+}
+
+.sign_up {
+	background: #f9e42e;
+	background-size: cover;	
+}
+
 footer {
 
 }
@@ -71,7 +94,7 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-h1, h3, .sign_up, .relaxr {
+/* h1, h3, .sign_up, .relaxr {
 	font-weight: bolder;
 }
 
@@ -118,4 +141,4 @@ h3, .sign_up {
 
 .para2 {
 	font-family: italic;
-}
+} */
