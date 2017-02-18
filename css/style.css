@@ -31,17 +31,53 @@ Developer @GA in NYC
   clear: both;
 }
 
+/*** I had none of this in my CSS and I dont understand why? ***/
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none; /*need to google text-decoration: none;*/
+}
+
+/*** my code:
+#1	wrong colour
+#2	wrong font-size
+#3 	why 2 colors in your code?
+#4	no Open Sans font
+#5	no font-weight
+#6	what am I doing with marigins???
+#7	no reference to <a>, some explanation needed here
+#8	general structure of css code layout needs to be explained
+		- notice that some classes get targeted in layout order below and then some elements, hard to see a pattern or a logic flow
 
 body {
 	color: #000;
 	font-size: 12px;
 	line-height: 1.4;
 	font-family: Helvetica, Arial, sans-serif;
+	margin-left:30%; 
+	margin-right:30%;
 }
-
+***/
 
 /******************************************
 /* LAYOUT
@@ -49,96 +85,122 @@ body {
 
 /* Center the container */
 .container {
-  width: 100%;
-  margin: auto;
-  height: 500px;
+  width: 960px;
+  margin: 0 auto; /* don't understand - please explain?*/
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 800;
 }
 
 header {
-
+  height: 700px;
+  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+  padding-top: 32px;
 }
 
-.intro {
-	background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-	background-size: cover;
+header .logo {
+  color: #fff;
+}
+header h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+  margin: 120px 0 90px; /*Margin with 3 values? I thought it would need to be 1, 2 or 4 #1=all #2=top & bottom and #4=all !!!must google!!! */
+  font-weight: 600;
 }
 
+li { /*How do I move this further up on the page?*/
+  display: inline-block;
+  float: right;
+  list-style: none;
+  margin: 0 26px 75px; /* don't understand - please explain?*/
+  font-size: 20px;
+  font-color: white;
+}
+
+.button { /*how is the .button class being effected here? html reads class as "button yellow" and "button blue" how is this possible?
+ is it any word in the spacing that allows you to target a class?*/
+  border-radius: 5px; /*what is border-radius? !!!must google!!!*/
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto; /* don't understand - please explain?*/
+}
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 24px;
+}
 .benefits {
-	background: #f0efef;
-	background-size: cover;	
+  padding: 100px 0 80px;
 }
-
-.benefits h4 {
-	margin-top: 0;
+h3 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
-
+.benefits p, .benefits ul {
+  width: 600px;
+}
+.benefits ul {
+  list-style: disc;
+  margin: 30px 0 0 80px; /* don't understand - please explain?*/
+}
 .testimonial {
-	background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
-	background-size: cover;
+  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  padding: 70px 0 70px; /* don't understand - please explain?*/
+  color: #fff;
 }
-
-.testimonial p {
-	margin-top: 0;
+blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 580px;
+  margin: 0 auto; /* don't understand - please explain?*/
 }
-
-.sign_up {
-	background: #f9e42e;
-	background-size: cover;	
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
 }
-
+aside {
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center
+}
 footer {
-
+  background: #121212;
+  padding: 65px 0 45px; /* don't understand - please explain?*/
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: 68px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 75px; /* don't understand - please explain?*/ 
+}
+footer p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/* h1, h3, .sign_up, .relaxr {
-	font-weight: bolder;
-}
 
-h2, h4, span, footer {
-	font-weight: bold;
-}
-
-.para1, .para2, ul {
-	font-weight: normal;
-}
-
-h1, h2, .relaxr {
-	font-size: 24px;
-}
-
-h4 {
-	font-size: 20px;
-}
-
-.para2, span {
-	font-size: 18px;
-}
-
-h3 {
-	font-size: 14px;
-}
-
-.para1, ul {
-	font-size: 13px;
-}
-
-.sign_up {
-	font-size: 12px;
-}
-
-footer {
-	font-size: 9px;
-}
-
-h3, .sign_up {
-	border: 5px;
-}
-
-
-.para2 {
-	font-family: italic;
-} */
