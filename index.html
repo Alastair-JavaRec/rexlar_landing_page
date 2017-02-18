@@ -1,5 +1,25 @@
+<!--Gave up! made reference to solution code, struggled with trying to re-eningeer and figure out the code I wrote and kept getting confused. going to make comments on solution code on where I went wrong and what I dont understand and hope to learn from that :( -->
+
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
+
+		<title>Relaxr Landing Page</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+
+<!--My code: head
+	#1	meta content="your description" where I do get this info?
+	#2	did not add google font link to my orignal
+
 	<head>
     	<meta charset="utf-8">
     	<meta name="description" content="Your description goes here">
@@ -7,47 +27,150 @@
 
 		<title>Relaxr Landing Page</title>
 
-		<!-- external CSS link -->
-		<!--Wondering if I can/should use both normalize.css and reset.css rather than just one-->
-		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="./css/normalize.css">
-	</head>
+		<link rel="stylesheet" href="./css/style.css">
+-->
 	<body>
+			<header>
+				<div class="container">
+					<h1 class="logo">Relaxr</h1>
+						<nav>
+							<ul>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Team</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">About</a></li>
+							</ul>
+						</nav>
+					<h2>Get piece of mind with a single tap</h2>
+					<a class="button yellow" href="#">Get it Now</a>
+				</div>
+			</header>
+	</head>
 
-		<header>
-			<h1>Relaxr</h1>
-		</header>
+<!--My code: header		
+	#1	my haeder included list, because of new requirements to 2nd part of assignment
+	#2	added nav class because I was struglling with 2 lists on same page and couldnt figure out how to taregt lists indiviually
+	#3	will comment more about styling issues on css comments
 
-		<section class="intro">
+		<body>
+			<header>
+				<div class="logo">Relaxr</div>
+					<nav class="list_one">
+						<ul>
+							<a href="blog.html"><li>Blog</li></a>
+							<li>Contact Us</li></a>
+							<li>Team</li></a>
+							<li>FAQ</li></a>
+							<li>About</li></a>
+							</ul>
+					</nav>
+			
+					<h3>Get piece of mind with a single tap</h3>
+					<a href="index.html" class="button">Get it Now</a>
+				</div>
+					</header>
+	-->
+
+		<section class="benefits">
 			<div class="container">
-				<h2>Get piece of mind with a single tap</h2>
-				<!--I wasn't where to link this url to so I looped it back to index.html, must ask and add when I know where to aim url-->
-				<a href="index.html"><h3>Get it Now</h3></a>
-				<h4>Benefits</h4>
-				<!--Wondering about my use of class names and if I am using it correctly-->
-					<section class="para1"> 
-						<p>The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.</p>
-					</section>
+				<h3>Benefits</h3>
+				<p>The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.</p>
+				<ul>
+					<li>Schedule meetings for you</li>
+					<li>Excel automation to complete your work for you</li>
+					<li>Responds to emails on your behalf</li>
+					<li>Does all your work for you with our revolutionary AI technology</li>
+				</ul>
+			</div>
+		</section>
+
+<!--my code: main
+#1	I called this section a main you made it a section, seems like I dont understand the best way to structure a page
+#2	you used a div for h and ul, I just used for ul. why did I do this (I dont know) How can I better understand this?
+#3	div class "list_two" because of styling issues with 2 lists on page but didnt work. will comment more in css comments
+
+		<main>
+			<h4>Benefits</h4></div>
+				
+				<div class="text">
+					<p>The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.</p>
+				</div>
+
+				<div class="list_two"> 
 					<ul>
 						<li>Schedule meetings for you</li>
 						<li>Excel automation to complete your work for you</li>
 						<li>Responds to emails on your behalf</li>
 						<li>Does all your work for you with our revolutionary AI technology</li>
 					</ul>
-				<!--Wondering about my use of class names and if I am using it correctly-->
-					<section class="para2">
-						<p>“Relaxr changed my life. I’ve been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work. ” <span> - Amanda, Intuit</span></p>
-					</section class="sign_up">
-				<a href="index.html"><strong>Sign Up Now!</strong></a>
-				<section class="relaxr">Relaxr</section>
-					<ul>
-						<li><a href="index.html"><img src="./images/twitter.png" alt="Twitter logo"></a></li>
-						<li><a href="index.html"><img src="./images/facebook.png" alt="Facebook logo"></a></li>
-					</ul>
+				</div>
+		</main>
+-->
+
+		<section class="testimonial">
+			<div class="container">
+				<blockquote>&ldquo;Relaxr changed my life. I&rsquo;ve been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work.&rdquo;
+				<span>- Amanda, Intuit</span></blockquote>
 			</div>
 		</section>
 
-		<footer>&copy; Copyright 2015. Relaxr.</footer>
+<!--my code: .testimonial
+#1	what are blockquotes and the purple garbles???
+#2	can google blockquotes but would need an explaination on purple garbles
 
+		<section class="testimonial">
+			<div class="container">
+				<p>“Relaxr changed my life. I’ve been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work. ” <span> - Amanda, Intuit</span></p>
+			</div>
+		</section>
+
+-->
+
+		<aside>
+			<a class="button blue" href="#">Sign Up Now!</a>
+		</aside>
+
+<!--my code: aside
+#1	another structure issue, I named section and div, you named aside 
+#2	i get the # (tbc/insert) i think
+
+		<section class="sign_up">
+			<div class="container">
+				<a href="index.html">Sign Up Now!</a>
+			</div>
+		</section>
+-->	
+		<footer>
+			<h4 class="logo">Relaxr</h4>
+
+			<ul>
+				<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>
+				<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
+			</ul>
+
+			<p class="copyright">Copyright 2015. Relaxr.</p>
+		</footer>
 	</body>
 </html>
+
+<!--my code: footer
+#1	footer class="footer" is redunant, I see this now
+#2	looking at my code, seems like I am not understanding how to use <div class="container">, need help with structure pages
+#3	<a> are for links only, should not have done that in copyright
+
+		<footer class="footer">
+			<div class="container">
+				<a>Relaxr</a>
+				<ul>
+					<li><a href="index.html"><img src="./images/twitter.png" alt="Twitter logo"></a></li>
+					<li><a href="index.html"><img src="./images/facebook.png" alt="Facebook logo"></a></li>
+				</ul>
+				<a>&copy; Copyright 2015. Relaxr.</a>
+			</div>
+		</footer>
+		
+	</body>
+</html>
+-->
