@@ -55,7 +55,7 @@ body {
 }
 
 a {
-  text-decoration: none; /*need to google text-decoration: none;*/
+  text-decoration: none;
 }
 
 /*** my code:
@@ -86,7 +86,7 @@ body {
 /* Center the container */
 .container {
   width: 960px;
-  margin: 0 auto; /* don't understand - please explain?*/
+  margin: 0 auto;
 }
 
 .logo {
@@ -102,23 +102,33 @@ header {
 
 header .logo {
   color: #fff;
+  display: inline-block;
 }
 header h2 {
   font-size: 48px;
   text-align: center;
   color: #fff;
-  margin: 120px 0 90px; /*Margin with 3 values? I thought it would need to be 1, 2 or 4 #1=all #2=top & bottom and #4=all !!!must google!!! */
+  margin: 120px 0 90px;
   font-weight: 600;
 }
 
-li { /*How do I move this further up on the page?*/
+ul { 
   display: inline-block;
   float: right;
   list-style: none;
-  margin: 0 26px 75px; /* don't understand - please explain?*/
   font-size: 20px;
-  font-color: white;
 }
+
+nav ul li {
+	display: inline-block;
+	margin: 0 26px 75px;
+}
+
+li a {
+	color: white;
+}
+
+
 
 .button { /*how is the .button class being effected here? html reads class as "button yellow" and "button blue" how is this possible?
  is it any word in the spacing that allows you to target a class?*/
@@ -129,7 +139,7 @@ li { /*How do I move this further up on the page?*/
   font-size: 28px;
   text-align: center;
   display: block;
-  margin: 0 auto; /* don't understand - please explain?*/
+  margin: 0 auto;
 }
 .yellow {
   background: #f9e42e;
@@ -142,6 +152,8 @@ li { /*How do I move this further up on the page?*/
 }
 .benefits {
   padding: 100px 0 80px;
+  background: #f0efef;
+  height: 500px
 }
 h3 {
   color: #033048;
@@ -151,14 +163,17 @@ h3 {
 }
 .benefits p, .benefits ul {
   width: 600px;
+  float: left;
 }
 .benefits ul {
   list-style: disc;
-  margin: 30px 0 0 80px; /* don't understand - please explain?*/
+  padding-left: 100px;
+  padding-top: 20px;
 }
+
 .testimonial {
   background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
-  padding: 70px 0 70px; /* don't understand - please explain?*/
+  padding: 70px 0 70px; 
   color: #fff;
 }
 blockquote {
@@ -167,7 +182,7 @@ blockquote {
   font-style: italic;
   text-align: center;
   width: 580px;
-  margin: 0 auto; /* don't understand - please explain?*/
+  margin: 0 auto; 
 }
 blockquote span {
   font-weight: 600;
@@ -181,7 +196,7 @@ aside {
 }
 footer {
   background: #121212;
-  padding: 65px 0 45px; /* don't understand - please explain?*/
+  padding: 65px 0 45px;
   text-align: center;
 }
 footer .logo {
@@ -191,7 +206,7 @@ footer .logo {
 footer ul li {
   display: inline-block;
   list-style: none;
-  margin: 0 26px 75px; /* don't understand - please explain?*/ 
+  margin: 0 26px 75px;
 }
 footer p {
   font-size: 18px;
